@@ -1,0 +1,7 @@
+version = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "ubuntu-focal-22-04-vps-provision"
+version = "0.1.0"
+source = { virtual = "." }
