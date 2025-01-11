@@ -31,7 +31,7 @@ fi
 
 # Update system packages
 echo "Updating system packages..."
-apt update && apt upgrade -y
+apt-get update && apt-get upgrade -y
 check_status "System update"
 
 # Install prerequisites

@@ -124,6 +124,15 @@ class UbuntuDockerInstaller:
         print("Access it at: http://your-server-ip:9000")
         print("Create your admin account on first login.")
 
+    def setup_bashrc(self):
+        print("\n=== Setting up bashrc ===")
+        run_command("wget -O - https://github.com/tarikwaleed/dotfiles/raw/master/.bashrc > ~/.bashrc ")
+        run_command("source ~/.bashrc")
+        print("\n===  bashrc configured successfully ===")
+
+
+
+
     def main(self):
         """Main installation process."""
         # Check Ubuntu version
